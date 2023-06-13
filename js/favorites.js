@@ -21,9 +21,9 @@ export class Favorites {
    async add(username) {
       try {
 
-         const lowerCaseusername = username.toLowerCase()
+         const lowerCaseUsername = username.toLowerCase()
 
-         const userExists = this.entries.find(entry => entry.login.toLowerCase() === lowerCaseusername)
+         const userExists = this.entries.find(entry => entry.login.toLowerCase() === lowerCaseUsername)
 
 
          if(userExists) {
